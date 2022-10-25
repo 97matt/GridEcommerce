@@ -1,0 +1,111 @@
+/* Regular reset */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Containers */
+
+.container .head {
+    grid-area: head;
+}
+
+.container .menu {
+    grid-area: menu;
+}
+
+.container .main {
+    grid-area: main;
+}
+
+.container .footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "menu main"
+    "footer footer";
+    grid-template-columns: 10% 90%;
+}
+
+/* Head */
+
+.head {
+    background-color: rgb(40, 97, 176);
+}
+
+.head h3 {
+    color: white;
+    text-align: center;
+}
+
+/* Menu */
+
+.menu {
+    background-color: lightgray;
+    height: 141vh;
+}
+
+.menu .mcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+.menu .mcontainer .mitem {
+    margin-top: 15px;
+}
+
+#num {
+    color: rgba(0, 0, 0, 0.555);
+}
+
+/* Main */
+
+.main {
+    background-color: lightgray;
+}
+
+.main .maincontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1%;
+    margin-left: 2%;
+    gap: 2%;
+}
+
+.main .maincontainer .mainflex {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center; 
+}
+
+.main .maincontainer .mainflex img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.main .maincontainer .mainflex .mitem {
+    background-color: rgb(40, 97, 176);
+}
+
+.main .maincontainer .mainflex .mitem p {
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+    color: rgb(19, 154, 154);
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.711);
+}
